@@ -1,52 +1,69 @@
+<!-- Informa ao navegador que este é um documento a ser renderizado como HTML-->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
+        <!-- Informa qual arquivo css vai ser utilizado para estilizar este documento HTML -->
         <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" >
     </head>
     <body>
-        <div class="jogo">
-            <div class="cabecario">
-                <h1>JOGO DA FORCA</h1>
-                <h3>Advinhe a palavra oculta!</h3>
+        <div id="jogo">
+            <!-- Texto que aparece no topo da página -->
+            <div id="cabecario">
+                <h1 id="titulo">JOGO DA FORCA</h1>
+                <div id="linha"></div>
+                <h3 id="subtitulo">Advinhe a palavra oculta!</h3>
             </div>   
             
-            <div class="bonecoEnforcado">
-                <div class="enforcado">
-                    <div class="estrutura">
-                        <div class="pedaco1"></div>
-                        <div class="pedaco2"></div>
-                        <div class="pedaco3"></div>
-                        <div class="corda">
-                            <div class="cordaTopo"></div>
-                            <div class="cordaMeio"></div>
-                            <div class="cordaBaixo"></div>
-                        </div>
+            <!-- Nesta sessão estará a o formato do boneco do jogo -->
+            <div id="bonecoEnforcado">
+
+                <!-- Temos a estrutura que segura o boneco no ar -->
+                <div id="estrutura">
+                    <div id="pedaco1"></div>
+                    <div id="pedaco2"></div>
+                    <div id="pedaco3"></div>
+                    <div id="corda">
+                        <div id="cordaTopo"></div>
+                        <div id="cordaMeio"></div>
+                        <div id="cordaBaixo"></div>
+                        <div id="cordaLaco"></div>
                     </div>
-                    <div class="pessoa">
-                        <div class="olhoEsq"></div>
-                        <div class="olhoDir"></div>
-                        <div class="cabeca"></div>
-                        <div class="corpo"></div>
-                        <div class="bracoEsq"></div>
-                        <div class="bracoDir"></div>
-                        <div class="pernaEsq"></div>
-                        <div class="pernaDir"></div>
-                    </div>
+                </div>
+
+                <!-- Temos o formado do boneco na tela -->
+                <div id="pessoa">
+                    <div id="olhoEsq">X</div>
+                    <div id="olhoDir">X</div>
+                    <div id="cabeca"></div>
+                    <div id="corpo"></div>
+                    <div id="bracoEsq"></div>
+                    <div id="bracoDir"></div>
+                    <div id="pernaEsq"></div>
+                    <div id="pernaDir"></div>
                 </div>
             </div>
 
-            <div class="painel">
-                <h3 id="categoria"></h3>
-                <div class="mostrador">
-                    <div class="tracos"></div>
-                    <div class="letrasErradas"></div>
+            <!-- Painel com as informações acerca do status do jogo -->
+            <div id="painel">
+
+                <!-- Categoria da palavra que o jogador está buscando-->
+                <h4 id="categoria">Categoria</h4>
+
+                <!-- Define mensagem e resposta ao uso do botão para início do jogo -->
+                <div id="mensagem">Pressione alguma tecla...</div>
+
+                <!-- Indica a palavra escondida e as letras já escolhidas-->
+                <div id="mostrador">
+                    <div id="tracos"></div>
+                    <div id="letrasErradas">Letras Erradas...</div>
                 </div>
-                <div id="pressioneTecla">Precione alguma tecla...</div>
-                <button class="botaoNovoJogo" onclick="iniciaJogo()"> # NOVO JOGO # </button>
+
+                <button id="botaoNovoJogo" onclick="iniciaJogo()"> # NOVO JOGO # </button>
             </div>
         </div>
 
+        <!-- Chama o javascript vinculado a este documento html -->
         <script src="script.js"></script>
     </body>
 </html>

@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+body {
+    background: #142a3e;
+}
+
+h1#titulo {
+    font: 60px "Press Start 2P", cursive;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#linha{
+    height: 5px;
+    background: red;
+}
+
+#subtitulo {
+    font-family: 'Courier New', Courier, monospace;
+    color: #eec513;
+    margin-top: 4px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#bonecoEnforcado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translate(-15px, 10px);
+}
+
+#pedaco1 {
+    background: rgb(191,133,75);
+    width: 150px;
+    height: 20px;
+    border-top-left-radius: 10px;
+}
+
+#pedaco2 {
+    background: rgb(191,133,75);
+    width: 20px;
+    height: 250px;
+}
+
+#pedaco3 {
+    background: rgb(191,133,75);
+    width: 100px;
+    height: 20px;
+    transform: translate(-20px,0px);
+    border-radius: 3px;
+}
+
+#cordaTopo {
+    background: #F7B239;
+    width: 10px;
+    height: 30px;
+    border-radius: 10px;
+    transform: translate(150px,-295px);
+    box-shadow: 
+    00px 0px 0px 1px #cc9028,
+    10px 0px 0px 0px #F7B239,
+    10px 0px 0px 1px #cc9028,
+    20px 0px 0px 0px #F7B239,
+    20px 0px 0px 1px #cc9028;
+}
+
+#cordaMeio {
+    background: #F7B239;
+    width: 10px;
+    height: 40px;
+    border-radius: 10px;
+    transform: translate(160px,-297px);
+    box-shadow: 00px 0px 0px 1px #cc9028;
+}
+
+#cordaBaixo {
+    background: transparent;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #cc9028;
+    border-radius: 50%;
+    transform: translate(149px, -295px);
+    box-shadow: 00px 0px 0px 0px #cc9028,
+    inset 0 0 0 5px #F7B239;
+}
+
+#cordaLaco{
+    background: #F7B239;
+    width: 20px;
+    height: 5px;
+    border-radius: 10px;
+    transform: translate(155px,-345px);
+    box-shadow: 
+    00px 00px 0px 1px #cc9028,
+    00px 05px 0px 0px #F7B239,
+    00px 05px 0px 1px #cc9028;
+}
+
+#olhoEsq {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    color: red;
+    transform: translate(05px, 80px);
+    opacity: 0.3;
+}
+
+#olhoDir {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    color: red;
+    position: absolute;
+    transform: translate(19.5px, 70.5px);
+    opacity: 0.3;
+}
+
+#cabeca,
+#corpo, 
+#bracoEsq, 
+#bracoDir, 
+#pernaEsq, 
+#pernaDir {
+    background: #fff;
+}
+
+#corpo, 
+#bracoEsq, 
+#bracoDir, 
+#pernaEsq, 
+#pernaDir  {
+    width: 10px;
+    border-radius: 10px;
+
+}
+
+#cabeca {
+    width: 44px;
+    height: 50px;
+    transform: translate(-7px, 52px);
+    opacity: 0.3;
+    border-radius: 50%;
+}
+
+#corpo {
+    height: 70px;
+    transform: translate(10px, 50px);
+    opacity: 0.3;
+}
+
+#bracoEsq {
+    height: 40px;
+    transform: translate(25px, -20px)
+    rotate(-45deg);
+    opacity: 0.3;
+}
+
+#bracoDir {
+    height: 40px;
+    transform: translate(-5px, -60px)
+    rotate(45deg);
+    opacity: 0.3;
+}
+
+#pernaEsq {
+    height: 40px;
+    transform: translate(25px, -40px)
+    rotate(-45deg);
+    opacity: 0.3;
+}
+
+#pernaDir {
+    height: 40px;
+    transform: translate(-5px, -80px)
+    rotate(45deg);
+    opacity: 0.3;
+}
+
+#painel {
+
+}
+
+#categoria {
+
+}
+
+#mensagem {
+
+}
+
+#mostrador {
+
+}
+
+#tracos {
+
+}
+
+#letrasErradas {
+
+}
+
+#botaoNovoJogo {
+    
+}
